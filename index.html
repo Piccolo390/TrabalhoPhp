@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário do Funcionário</title>
+</head>
+<body>
+    <h1>Qual formulário deseja criar?</h1>
+
+        <button onclick="consultor()">Consultor</button>
+
+        <button onclick="vendedor()">Vendedor</button>
+
+        <button onclick="gerente()">Gerente</button><br><br>
+
+        <form action="Funcionario/novoFuncionario.php" method="POST">
+
+        <div id="funcionario" style="display: none">
+            <label >Nome:</label>
+            <input type="text" name="Nome"><br><br>
+            <label >Rg:</label>
+            <input type="text" name="Rg"><br><br>
+        </div>
+
+        <div id="vendedor" style="display: none">
+            <label >Comissao:</label>
+            <input type="text" name="Comissao"><br><br>
+            <label >NumeroVendas:</label>
+            <input type="text" name="NumeroVendas"><br><br>
+        </div>
+
+        <div id="consultor" style="display: none">
+            <label >ValorHora:</label>
+            <input type="text" name="ValorHora"><br><br>
+            <label >HorasTrabalhadas:</label>
+            <input type="text" name="HorasTrabalhadas"><br><br>
+        </div>
+
+        <div id="gerente" style="display: none">
+            <label >Bonificacao:</label>
+            <input type="text" name="Bonificacao"><br><br>
+            <label >Salario:</label>
+            <input type="text" name="Salario"><br><br>
+        </div>
+
+        <button id="button" name="button" value="button" style="display: none">Enviar</button>
+    </form>
+
+    <script src="inputs.js"></script>
+</body>
+</html>
